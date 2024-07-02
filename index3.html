@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sua melhor escolha</title>
+    <title>Fast Cars</title>
     <link rel="stylesheet" href="./lib/bootstrap.min.css">
     <style>
         .navbar-nav .nav-link.active{
@@ -21,14 +21,13 @@
         }
 
         header {
-            position: sticky;
+            position: relative;
             top: 0;
             left: 0;
             background-color: #fff;
         }
     </style>
 </head>
-
 <body>
     <header id="#cabecalh">
         <div class="navbar navbar-expand-lg">
@@ -37,16 +36,16 @@
                 <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <nav class="collapse navbar-collapse justify-content-end" id="menu">
+                <nav  class="collapse navbar-collapse justify-content-end" id="menu">
                     <ul class="nav navbar-nav nav-pills">
                         <li class="nav-item">
                             <a class="nav-link active" href="#inicio">Início</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#produtos">Produtos</a>
+                            <a class="nav-link" href="#sobre">Sobre</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#promocoes">Promoções</a>
+                            <a class="nav-link" href="#carros">Carros</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#contato">Contato</a>
@@ -58,7 +57,7 @@
         </div>
     </header>
 
-        <divi class="carousel-exemplo" class="carousel carousel-fade slide" data-bs-ride="carousel">
+        <div class="carousel-exemplo" class="carousel carousel-fade slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div  data-bs-interval="2000" class="carousel-item active" class="row">
                     <img src="./assets/slide1.png" alt="Carro da Porsche">
@@ -91,42 +90,41 @@
                 </div>
             </div>
         </div>
-        <div>
-            <div class="container text-center">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea illum eveniet quibusdam impedit obcaecati tempora laudantium enim, 
-                    quas consequuntur quidem, quia a nesciunt voluptatem ipsam neque distinctio, quo alias dignissimos!</p>
+        <div class="container" id="sobre">
+            <div class="descricao text-center">
+                <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis autem, quos rem itaque dolorem corporis fugiat? 
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum veritatis veniam ullam repudiandae,
+                eveniet itaque nisi officiis quaerat quos enim quasi dolorum eaque veniam! Hic, expedita 
+                ipsam blanditiis quo eius cumque modi minus maiores aut sed placeat, pariatur saepe fugit vel doloremque obcaecati.
+                </p>
             </div>
         </div>
-    </section>
-    <div data-bs-spy="scroll" data-bs-target="#cabecalho">
-        <divs class="container" id="inicio">
-            <h2 class=" container text center">CArros</h2>
-        </divs>
-        <section id="produtos">
-            <h2>Produto</h2>
-            <div class="container">
-                <nav class="nav nav-pills">
-                    <button data-bs-toggle="tab" data-bs-target="#aba1" class="nav-link active" type="button">Eletrônicos</button>
-                    <button data-bs-toggle="tab" data-bs-target="#aba2" class="nav-link" type="button">Moda Masculina</button>
-                    <button data-bs-toggle="tab" data-bs-target="#aba3" class="nav-link" type="button">Moda Feminina</button>
-                </nav>
-            </div>
-            <div class="tab-content">
-                <div class="tab-pane active" id="aba1">
-                    conteúdo da aba eletrônicos
+        <div  class="container" id="carros">
+            <div class="row custom-row">
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div style="width: 20rem;" class="card text-bg-dark custom-card mx-auto">
+                        <img  src="https://cdn.pixabay.com/photo/2018/10/14/18/21/fiat-3747104_1280.jpg" alt="">
+                        <div>
+                            <p class="text-center" class="card-title card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="tab-pane" id="aba2">
-                    conteúdo da aba eletrônicos
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div style="width: 19.5rem;" class="card text-bg-dark custom-card mx-auto">
+                        <img src="https://cdn.pixabay.com/photo/2019/07/30/08/11/fiat-4372246_1280.jpg" alt="">
+                        <p class="text-center" class="card-title card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                    </div>
                 </div>
-                <div class="tab-pane" id="aba3">
-                    conteúdo da aba eletrônicos
+                <div style="width: 20rem;" class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="card text-bg-dark custom-card mx-auto">
+                        <img src="https://cdn.pixabay.com/photo/2019/12/02/12/43/fiat-500-4667659_1280.jpg" alt="">
+                        <p class="text-center" class="card-title card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                    </div>
                 </div>
             </div>
-        </section>
-        <section id="promocoes">
-            <h2>Promoção</h2>
-        </section>
-        <section id="contato">
+        </div>
+        <div class="container" id="contato">
             <h2>Contato</h2>
             <div class="container">
                 <form>
@@ -146,26 +144,11 @@
                 <button type="submit" class="btn btn-primary">Enviar</button>
               </form>
             </div>
-        </section>
-    </div>
-
-    <div class="toast-container position-fixed bottom-0 end-0 p-3">
-        <div data-bs-autohide="false" class="toast" id="mensagens-alerta">
-            <header class="toast-header">
-                <strong>Importante</strong>
-            </header>
-            <div class="mt-2 pt-2 boder-top">
-                <div class="toast-body">
-                    Você possui 10 mensagem não lidas
-                    <button data-bs-dismiss="toast" class="btn btn-danger">Descartar</button>
-                </div>
-            </div>
         </div>
-    </div>
 </body>
 <script src="./lib/bootstrap.bundle.min.js"></script>
 <script>
-    const ativadorToast = document.getElementById('btn-checar-emails')
+        const ativadorToast = document.getElementById('btn-checar-emails')
     const mensagem = document.getElementById('mensagens-alerta')
     if(ativadorToast){
         ativadorToast.addEventListener('click', function(){
@@ -175,4 +158,6 @@
         })
     }
 </script>
+
+    
 </html>
